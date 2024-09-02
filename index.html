@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +8,15 @@
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/ar.js/1.6.2/aframe/build/aframe-ar.js"></script>
 </head>
-<body style="margin: 0; overflow: hidden;">
+
+<body>
     <a-scene embedded arjs>
-        <!-- Cámara -->
-        <a-marker preset="hiro">
-            <!-- Contenido 3D -->
-            <a-box position='0 0.5 0' material='color: red'></a-box>
-        </a-marker>
-        <a-entity camera></a-entity>
+        <a-entity gltf-model="avocado.gltf" scale="6 6 6" crossOrigin="anonymous">
+
+        </a-entity>
+
+        <a-marker-camera preset='hiro'></a-marker-camera>
     </a-scene>
 </body>
+
 </html>
